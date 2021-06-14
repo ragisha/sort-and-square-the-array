@@ -1,0 +1,12 @@
+import java.util.*;
+import java.util.Arrays;
+class Solution {
+    public int[] solve(int[] nums) {
+        int len,i;
+        len = nums.length;
+        for(i=0;i<len; i++)
+            nums[i]=nums[i]*nums[i];
+        Arrays.sort(nums);
+        return nums;
+    }
+}
